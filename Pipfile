@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+certifi = "==2018.10.15"
+pipenv = "==2018.10.13"
+pytz = "==2018.5"
+virtualenv = "==16.0.0"
+virtualenv-clone = "==0.3.0"
+Django = "==2.1.2"
+django-environ = "*"
+
+[dev-packages]
+django-debug-toolbar = "*"
+
+[requires]
+python_version = "3.6"

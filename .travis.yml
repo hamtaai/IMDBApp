@@ -1,0 +1,15 @@
+language: python
+
+python:
+  - "3.6"
+
+before_install:
+  - pip install pipenv --upgrade
+  - mkdir logs
+
+install:
+  - pipenv install --dev --system --deploy
+  - cp imdbapp/settings/example.imdbapp.env CardsAgainstHumanity/settings/imdbapp.env
+
+script:
+  - python manage.py test
