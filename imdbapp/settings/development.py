@@ -8,6 +8,8 @@ import os
 if "celery" in sys.argv[0]:
     DEBUG = False
 
+TIME_ZONE = 'Europe/Budapest'
+
 # Less strict password authentication and validation
 PASSWORD_HASHERS = [
     'django.contrib.auth.hashers.PBKDF2PasswordHasher',
